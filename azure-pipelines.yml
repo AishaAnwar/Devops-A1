@@ -19,9 +19,8 @@ steps:
     replaceExistingArchive: true
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'Azure subscription 1(c37c0729-6ee1-4911-9155-738994d132d9)'
+    azureSubscription: 'Azure for Students(c37c0729-6ee1-4911-9155-738994d132d9)'
     appType: 'webApp'
     appName: 'DevOpsWebAppA1'
-    package: '$(System.DefaultWorkingDirectory)/*.zip'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
     deploymentMethod: 'auto'
-
